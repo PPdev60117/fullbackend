@@ -21,8 +21,8 @@ mongoose.connect(process.env.DATABASE,{
 //middleware 
 app.use(express.json())
 app.use(cors({
-    credentials:true,
-    origin:*
+    credentials: true,
+    origin:['https://fontend-mern.onrender.com']
 }))
 app.use(morgan("dev"))
 
